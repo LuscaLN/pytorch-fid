@@ -5,7 +5,7 @@ import random
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 
 parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
-parser.add_argument("--seed", type=int, default=0, help="Seed for selecting images")
+parser.add_argument("--seed", type=str, default=0, help="Seed for selecting images")
 
 parser.add_argument(
     "--images_path",
@@ -21,8 +21,8 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+sd = int(args.seed)
 
-sd = args.seed
 path_images = args.images_path
 dest_images = args.results_path
 random.seed(sd) #melhor até agora: 4 
