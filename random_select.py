@@ -8,13 +8,13 @@ parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
 parser.add_argument("--seed", type=int, default=0, help="Seed for selecting images")
 
 parser.add_argument(
-    "images_path",
+    "--images_path",
     type=str,
     nargs=2,
     help=("Paths to the original images"),
 )
 parser.add_argument(
-    "results_path",
+    "--results_path",
     type=str,
     nargs=2,
     help=("Paths to the selected images folder images"),
