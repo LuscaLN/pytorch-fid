@@ -10,13 +10,13 @@ parser.add_argument("--seed", type=str, default=0, help="Seed for selecting imag
 parser.add_argument(
     "--images_path",
     type=str,
-    nargs=2,
+    nargs=1,
     help=("Paths to the original images"),
 )
 parser.add_argument(
     "--results_path",
     type=str,
-    nargs=2,
+    nargs=1,
     help=("Paths to the selected images folder images"),
 )
 
