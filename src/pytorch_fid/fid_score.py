@@ -349,7 +349,7 @@ def main():
         args.path, args.batch_size, device, args.dims, num_workers
     )
     print("FID: ", fid_value)
-
+    return fid_value
 
 if __name__ == "__main__":
     main()
