@@ -21,7 +21,8 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
-sd = int(args.seed)
+i = args.seed
+sd = int(i)
 
 path_images = args.images_path
 dest_images = args.results_path
